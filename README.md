@@ -1,6 +1,6 @@
 <div align="center">
   
-<img src="https://i.imgur.com/879yFX9.png" width="30%" height="15%" />
+<img src="https://i.imgur.com/OFSvrLJ.png" width="30%" height="15%" />
 
 ### Your moods matter, track them with
 
