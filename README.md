@@ -37,7 +37,22 @@ Click the following link to be redirected to the User Stories we either have alr
   
 </div>
 
-## :camera_flash: Visuals and Helpful Insight (Getting Started):
+## :camera_flash: Where Brainwaves Began:
+
+### Landing Page
+
+![loginPage]()
+
+Welcome to Brainwaves! Log in in order to access...
+
+### Main Page
+
+![indexpage]()
+
+A brief description here
+
+
+## :camera_flash: Visuals and Helpful Insight:
 
 ### Landing Page
 
