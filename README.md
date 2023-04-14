@@ -1,12 +1,12 @@
 <div align="center">
   
-<img src="https://user-images.githubusercontent.com/116925227/227818788-9c57709a-9f96-48c1-920c-a12d04da7ae8.png" width="30%" height="15%" />
+<img src="https://i.imgur.com/879yFX9.png" width="30%" height="15%" />
 
 ### Your moods matter, track them with
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Sans&size=40&pause=1000&color=FFC1FE&center=true&vCenter=true&width=435&lines=Brainwaves" alt="Typing SVG" /></a>
 
-### Built by: **[Anthony Khong](https://www.linkedin.com/in/anthonykhong956/)**, **[Allan Moralles](https://www.linkedin.com/in/ivanallin/)**, & **[Kendall Johnson](https://www.linkedin.com/in/kendalljohnson-se/)**
+### Built by: **[Kendall Johnson](https://www.linkedin.com/in/kendalljohnson-se/)**
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
