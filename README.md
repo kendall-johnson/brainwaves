@@ -34,7 +34,9 @@
 ## :link: Associated Links:
 
 Click the following link to be redirected to the User Stories we either have already implemented, or plan on implementing! [Trello](https://trello.com/invite/b/f1wPS0iX/ATTI360f050ba3db39bdd144d5a5405c3093C25F7E1F/brainwaves)
-  
+
+Click the following link to be redirected to the Wireframe, ERD, and Design Inspiration for this project! [Whimsical](https://whimsical.com/brainwaves-6xrPrq391hNE3d896zc3mR)
+
 </div>
 
 ## :camera_flash: Where Brainwaves Began:
