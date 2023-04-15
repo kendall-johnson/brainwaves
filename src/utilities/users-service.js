@@ -10,9 +10,20 @@ export async function signUp(userData){
   return getUser()
 }
 
+export async function login(credentials) {
+  console.log(credentials)
+  const token = await usersAPI.login(credentials);
+  console.log(token)
+  localStorage.setItem('token', token);
+  console.log(token)
+  return getUser();
+}
+
+
 export function getToken(){
   // getItem returns null if there's no string
   const token = localStorage.getItem('token')
+  console.log(token)
   if(!token) return null
   // Obtain the payload of the token
   const payload = JSON.parse(atob(token.split('.')[1]));
@@ -27,7 +38,6 @@ export function getToken(){
 
 export function getUser(){
   const token = getToken()
-  // If there's a token, return the user in the payload, otherwise return null
   return token ? JSON.parse(atob(token.split('.')[1])).user : null
 }
 
@@ -36,13 +46,7 @@ export function logOut(){
 }
 
 export async function checkToken(){
-    // Just so that you don't forget how to use .then
     return usersAPI.checkToken()
-    // checkToken returns a string, but let's 
-    // make it a Date object for more flexibility
     .then(dateStr => new Date(dateStr));
-
-    // using async/await instead of .then()
-    // const tokenExp = await usersAPI.checkToken()
-    // return new Date(tokenExp)
 }
+

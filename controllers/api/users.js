@@ -1,9 +1,11 @@
 const User = require('../../models/user')
 const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt')
 
 module.exports = {
   create,
-  checkToken
+  checkToken,
+  login
 }
 
 async function create(req, res){
@@ -28,4 +30,32 @@ function createJWT(user){
     process.env.SECRET,
     { expiresIn: '24hr'}
   )
+}
+
+// Authenticate Helper Functions:
+async function passwordCompare(password, hash) {
+  // Stores outcomes of bcrypt compare:
+  match = await bcrypt.compare(password, hash);
+  // Returns outcome:
+  return match;
+}
+
+async function login(req, res) {
+  try {
+          // Finds user in database:
+          const user = await User.findOne({ email: req.body.email});
+          // If user exists and password matches:
+          if (user && passwordCompare(req.body.password, user.password)) {
+              // Token that contains encoded User data:
+              const token = createJWT(user);
+              // Parses token to JSON:
+              res.json(token);
+          } else {
+              // No actual error on the backend.
+              // Returns 'Bad Credentials' to front end:
+              res.status(400).json('Bad Credentials');
+          }
+  } catch (err) {
+    res.status(500).json(err);
+  }
 }
