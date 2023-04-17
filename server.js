@@ -14,6 +14,7 @@ app.use(require('./config/checkToken'));
 
 //routes
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/moods', require('./routes/api/moods'));
 
 const ensureLoggedIn = require('./config/ensureLoggedIn');
 //catch all

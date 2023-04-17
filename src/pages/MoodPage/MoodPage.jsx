@@ -1,14 +1,12 @@
 import React from 'react'
-import { checkToken } from '../../utilities/users-service'
-import Mood from '../../components/Mood/Mood'
+import MoodList from '../../components/MoodList/MoodList'
 
-export default function OrderHistoryPage() {
+export default function MoodPage({moods, setMoods}) {
 
   
   return (
     <>
-      <Mood />
-      
+      <MoodList moods={moods} setMoods={setMoods} />
     </>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import MoodTrackingForm from '../../components/MoodTrackingForm/MoodTrackingForm'
 
-export default function NewOrderPage() {
+export default function MoodTrackingPage({moods, setMoods}) {
   
   return (
   <>
-  <MoodTrackingForm />
+  <MoodTrackingForm moods={moods} setMoods={setMoods} />
   </>
   )
 }
