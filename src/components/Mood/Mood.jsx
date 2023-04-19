@@ -36,7 +36,7 @@ export default function Mood({ mood, moods, setMoods, id }) {
     <>
       <h1 className="text-2xl font-bold mb-4">Your Current Mood is:</h1>
       {editing ? (
-        <MoodEditForm onSubmit={handleEdit} mood={mood}/>
+        <MoodEditForm mood={mood} setMoods={setMoods} onSubmit={handleEdit} />
       ) : (
         <div className="flex flex-col items-center mb-4">
           <h2 className="text-lg font-semibold mb-2 text-center">{mood}</h2>

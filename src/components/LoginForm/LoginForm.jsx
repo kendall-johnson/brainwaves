@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {login} from '../../utilities/users-service';
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginForm({ setUser,  showLogin, setShowLogin }) {
   const [credentials, setCredentials] = useState({
@@ -17,8 +18,8 @@ export default function LoginForm({ setUser,  showLogin, setShowLogin }) {
     evt.preventDefault();
     try {
       const user = await login(credentials);
-      console.log(user)
       setUser(user);
+      useNavigate('/moods'); // Navigate to "/moods" after successful login
     } catch {
       setError('Log In Failed - Try Again');
     }

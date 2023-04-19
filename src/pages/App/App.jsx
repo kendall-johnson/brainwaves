@@ -9,10 +9,12 @@ import { getUser } from '../../utilities/users-service';
 import { index as fetchMoods } from '../../utilities/moods-api';
 
 
+
 export default function App() {
 
   const [user, setUser] = useState(getUser())
   const [moods, setMoods] = useState([]);
+  
 
   function updateUser(userState) {
     setUser(userState);

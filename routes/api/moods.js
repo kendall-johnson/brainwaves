@@ -9,7 +9,7 @@ router.get('/', moodsCtrl.index);
 router.post('/new', moodsCtrl.newMood);
 
 // POST /api/moods/:id
-router.post('/:id', moodsCtrl.editMood);
+router.put('/:id', moodsCtrl.editMood);
 
 // DELETE /api/moods/:id
 router.delete('/:id', moodsCtrl.deleteMood);

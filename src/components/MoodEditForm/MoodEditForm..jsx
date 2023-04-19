@@ -2,19 +2,21 @@ import React, { useState } from 'react';
 import { editMood } from '../../utilities/moods-api';
 import { useNavigate } from 'react-router-dom';
 
-export default function MoodEditForm({ mood, setMoods }) {
-  const [editedMood, setEditedMood] = useState(mood);
+export default function MoodEditForm({ mood, setMoods, onSubmit }) {
+  const [editedMood, setEditedMood] = useState({ mood: mood.mood });
   const navigate = useNavigate();
 
   function handleSubmit(event) {
     event.preventDefault();
-    editMood(editedMood.id, editedMood).then(() => {
-      const updatedMoods = moods.map(m => m.id === editedMood.id ? editedMood : m);
+    const id = mood._id;
+    editMood(id, editedMood).then(() => {
+      const updatedMoods = moods.map(m => m._id === id ? editedMood : m);
       setMoods(updatedMoods);
       navigate('/moods');
+      onSubmit(editedMood.mood); // Add this line to call the onSubmit prop
     }).catch(error => console.log(error));
   }
-
+  
   function handleChange(event) {
     const { name, value } = event.target;
     setEditedMood({ ...editedMood, [name]: value });

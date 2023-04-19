@@ -11,7 +11,7 @@ export function newMood(moodData){
 }
 
 export function editMood(id, moodData) {
-  return sendRequest(`${BASE_URL}/${id}`, 'POST', moodData);
+  return sendRequest(`${BASE_URL}/${id}`, 'PUT', moodData);
 }
 
 

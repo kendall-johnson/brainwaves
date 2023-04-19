@@ -26,14 +26,18 @@ function newMood(req, res) {
 }
 
 function editMood(req, res) {
-    const id = req.params.id;
-    Mood.findByIdAndUpdate(id, req.body, { new: true })
-      .then(mood => res.json(mood))
-      .catch(err => res.status(500).json({ message: err.message }));
+  const id = req.params.id;
+  console.log(id)
+  console.log(req.body.mood)
+  Mood.findByIdAndUpdate(id, { mood: req.body.mood }, { new: true })
+    .then(mood => res.json(mood))
+    .catch(err => res.status(500).json({ message: err.message }));
 }
+
   
 function deleteMood(req, res) {
     const id = req.params.id;
+    console.log(id)
     Mood.findByIdAndRemove(id)
       .then(mood => {
         if (!mood) {
