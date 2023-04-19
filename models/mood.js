@@ -6,6 +6,18 @@ const MoodSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  emotions: {
+    type: String,
+    required: true,
+  },
+  triggers: {
+    type: String,
+    required: true,
+  },
+  reflection: {
+    type: String,
+    required: true,
+  },
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
