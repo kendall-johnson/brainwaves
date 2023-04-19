@@ -1,46 +1,173 @@
 import React, { useState } from 'react';
-import { editMood } from '../../utilities/moods-api';
-import { useNavigate } from 'react-router-dom';
 
-export default function MoodEditForm({ mood, setMoods, onSubmit }) {
-  const [editedMood, setEditedMood] = useState({ mood: mood.mood });
-  const navigate = useNavigate();
+export default function MoodEditForm({ mood, onCancelEdit, onSaveEdit }) {
+  const [feeling, setFeeling] = useState(mood.feeling);
+  const [emotions, setEmotions] = useState(mood.emotions);
+  const [triggers, setTriggers] = useState(mood.triggers);
+  const [reflection, setReflection] = useState(mood.reflection);
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const id = mood._id;
-    editMood(id, editedMood).then(() => {
-      const updatedMoods = moods.map(m => m._id === id ? editedMood : m);
-      setMoods(updatedMoods);
-      navigate('/moods');
-      onSubmit(editedMood.mood); // Add this line to call the onSubmit prop
-    }).catch(error => console.log(error));
-  }
-  
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setEditedMood({ ...editedMood, [name]: value });
-  }
+  const handleFeelingChange = (e) => {
+    setFeeling(e.target.value);
+  };
+
+  const handleEmotionChange = (e) => {
+    const emotion = e.target.value;
+    if (emotions.includes(emotion)) {
+      setEmotions(emotions.filter((e) => e !== emotion));
+    } else {
+      setEmotions([...emotions, emotion]);
+    }
+  };
+
+  const handleTriggerChange = (e) => {
+    const trigger = e.target.value;
+    if (triggers.includes(trigger)) {
+      setTriggers(triggers.filter((t) => t !== trigger));
+    } else {
+      setTriggers([...triggers, trigger]);
+    }
+  };
+
+  const handleReflectionChange = (e) => {
+    setReflection(e.target.value);
+  };
+
+  const handleCancelEdit = () => {
+    onCancelEdit();
+  };
+
+  const handleSaveEdit = () => {
+    const editedMood = {
+      feeling,
+      emotions,
+      triggers,
+      reflection,
+    };
+    onSaveEdit(editedMood);
+  };
 
   return (
-    <div className="py-4">
-      <form onSubmit={handleSubmit}>
-        <label className="block mb-2 font-bold text-gray-700">Which choice best describes your current mood?</label>
-        <div className="inline-block relative w-full">
-          <select name="mood" className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" value={editedMood.mood} onChange={handleChange}>
-            <option value="Happy">Happy</option>
-            <option value="Sad">Sad</option>
-            <option value="Mad">Mad</option>
-            <option value="Neutral">Neutral</option>
-          </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 12l-5-5 1.41-1.41L10 9.17l3.59-3.58L15 7l-5 5z"/></svg>
-          </div>
+    <div>
+      <h2>Edit Mood</h2>
+      <label>
+        <span>Feeling:</span>
+        <select value={feeling} onChange={handleFeelingChange}>
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Mad">Mad</option>
+        </select>
+      </label>
+      <label>
+        <span>Emotions:</span>
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              value="Joy"
+              name="emotion"
+              checked={emotions.includes('Joy')}
+              onChange={handleEmotionChange}
+            />
+            Joy
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value="Anger"
+              name="emotion"
+              checked={emotions.includes('Anger')}
+              onChange={handleEmotionChange}
+            />
+            Anger
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value="Fear"
+              name="emotion"
+              checked={emotions.includes('Fear')}
+              onChange={handleEmotionChange}
+            />
+            Fear
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value="Sadness"
+              name="emotion"
+              checked={emotions.includes('Sadness')}
+              onChange={handleEmotionChange}
+            />
+            Sadness
+          </label>
         </div>
-        <button type="submit" className="mt-4 px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
-          Update Mood
-        </button>
-      </form>
+      </label>
+      <label>
+        <span>Triggers:</span>
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              value="Family"
+              name="triggers"
+              checked={triggers.includes('Family')}
+              onChange={handleTriggerChange}
+            />
+            Family
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              value="Work"
+              name="triggers"
+              checked={triggers.includes('Work')}
+              onChange={handleTriggerChange}
+            />
+            Work
+            </label>
+      <label>
+        <input
+          type="checkbox"
+          value="School"
+          name="triggers"
+          checked={triggers.includes('School')}
+          onChange={handleTriggerChange}
+        />
+        School
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="Social Media"
+          name="triggers"
+          checked={triggers.includes('Social Media')}
+          onChange={handleTriggerChange}
+        />
+        Social Media
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          value="Breakup"
+          name="triggers"
+          checked={triggers.includes('Breakup')}
+          onChange={handleTriggerChange}
+        />
+        Breakup
+      </label>
     </div>
-  );
-}
+  </label>
+  <label>
+    <span>Reflection:</span>
+    <textarea
+      value={reflection}
+      onChange={handleReflectionChange}
+    ></textarea>
+  </label>
+  <button onClick={() => handleCancelEdit()}>Cancel</button>
+  <button onClick={() => handleSaveEdit({ feeling, emotions, triggers, reflection })}>
+    Save
+  </button>
+</div>
+)}

@@ -13,7 +13,7 @@ import { index as fetchMoods } from '../../utilities/moods-api';
 export default function App() {
 
   const [user, setUser] = useState(getUser())
-  const [moods, setMoods] = useState([]);
+  const [mood, setMood] = useState({});
   
 
   function updateUser(userState) {
@@ -24,7 +24,7 @@ export default function App() {
     async function getMoods() {
       try {
         const moodsData = await fetchMoods();
-        setMoods(moodsData);
+        setMood(moodsData);
       } catch (error) {
         console.log(error);
       }
@@ -34,18 +34,19 @@ export default function App() {
 
   return (
     <main className="App">
-
+    <div className="bg-gradient-to-br from-purple-400 to-blue-500 h-screen">
       {user ?
         <>
           <NavBar user={user} updateUser={updateUser}/>
           <Routes>
-            <Route path="/moods/" element={<MoodPage moods={moods} setMoods={setMoods}/>} />
-            <Route path="/moods/new" element={<MoodTrackingPage moods={moods} setMoods={setMoods}/>} />
+            <Route path="/moods/" element={<MoodPage mood={mood} setMood={setMood}/>} />
+            <Route path="/moods/new" element={<MoodTrackingPage mood={mood} setMood={setMood}/>} />
           </Routes>
         </>
         :
         <AuthPage setUser={updateUser} />
       }
+    </div>
     </main>
   )
 }

@@ -1,29 +1,30 @@
 import { useState } from 'react';
-import {login} from '../../utilities/users-service';
+import { login } from '../../utilities/users-service';
 import { useNavigate } from 'react-router-dom';
 
-export default function LoginForm({ setUser,  showLogin, setShowLogin }) {
-  const [credentials, setCredentials] = useState({
-    email: '',
-    password: ''
-  });
-  const [error, setError] = useState('');
+export default function LoginForm({ setUser, showLogin, setShowLogin }) {
+const navigate = useNavigate();
+const [credentials, setCredentials] = useState({
+email: '',
+password: ''
+});
+const [error, setError] = useState('');
 
-  function handleChange(evt) {
-    setCredentials({ ...credentials, [evt.target.name]: evt.target.value });
-    setError('');
-  }
+function handleChange(evt) {
+setCredentials({ ...credentials, [evt.target.name]: evt.target.value });
+setError('');
+}
 
-  async function handleSubmit(evt) {
-    evt.preventDefault();
-    try {
-      const user = await login(credentials);
-      setUser(user);
-      useNavigate('/moods'); // Navigate to "/moods" after successful login
-    } catch {
-      setError('Log In Failed - Try Again');
-    }
-  }
+async function handleSubmit(evt) {
+evt.preventDefault();
+try {
+const user = await login(credentials);
+setUser(user);
+navigate('/moods'); // Navigate to "/moods" after successful login
+} catch {
+setError('Log In Failed - Try Again');
+}
+}
 
   return (
     <>

@@ -2,21 +2,21 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const MoodSchema = new mongoose.Schema({
-  mood: {
+  feeling: {
     type: String,
     required: true,
   },
   emotions: {
-    type: String,
+    type: [String],
     required: true,
   },
   triggers: {
-    type: String,
+    type: [String],
     required: true,
   },
   reflection: {
     type: String,
-    required: true,
+    default: ""
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,

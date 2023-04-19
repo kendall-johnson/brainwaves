@@ -6,7 +6,7 @@ export function index() {
     return sendRequest(BASE_URL)
 }
 
-export function newMood(moodData){
+export function createMood(moodData){
   return sendRequest(`${BASE_URL}/new`, 'POST', moodData)
 }
 

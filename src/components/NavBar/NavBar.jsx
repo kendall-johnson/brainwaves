@@ -12,7 +12,7 @@ export default function NavBar({ user, updateUser }) {
   }
 
   return (
-    <nav className="bg-blue-500 text-white h-16 flex items-center justify-between px-4">
+    <nav className=" text-white h-16 flex items-center justify-between px-4">
     <h1 className="text-2xl font-bold">Brainwaves</h1>
     <div className="flex">
       <Link
