@@ -39,7 +39,7 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 
 </div>
 
-## :camera_flash: Where Brainwaves Began:
+## <i class="fa-regular fa-thumbtack fa-shake" style="color: #99beff;"></i> Where Brainwaves Began:
 
 ### Landing Page
 
