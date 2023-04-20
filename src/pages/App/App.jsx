@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar'
 import { getUser } from '../../utilities/users-service';
 import { index as fetchMoods } from '../../utilities/moods-api';
+import Sidebar from '../../components/NavBar/Sidebar'
 
 
 
@@ -37,7 +38,7 @@ export default function App() {
     <div className="bg-gradient-to-br from-purple-400 to-blue-500 h-screen">
       {user ?
         <>
-          <NavBar user={user} updateUser={updateUser}/>
+          <Sidebar user={user} updateUser={updateUser}/>
           <Routes>
             <Route path="/moods/" element={<MoodPage mood={mood} setMood={setMood}/>} />
             <Route path="/moods/new" element={<MoodTrackingPage mood={mood} setMood={setMood}/>} />

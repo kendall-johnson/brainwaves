@@ -19,13 +19,13 @@ export default function NavBar({ user, updateUser }) {
         to="/moods"
         className="text-white hover:text-gray-200 ml-4"
       >
-        Mood History
+        Current Mood
       </Link>
       <Link
         to="/moods/new"
         className="text-white hover:text-gray-200 ml-4"
       >
-        New Mood
+        Track Your Mood
       </Link>
       <Link
         to=""

@@ -10,12 +10,12 @@ export default function MoodPage({mood, setMood}) {
   return (
     <>
      <div className=" py-4">
-  <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
-    <h1 className="text-lg font-bold text-gray-800 text-center">
-      Today is {dayOfWeek}, {month} {dayOfMonth}
-      <br></br>
-      The current time is {time}
+  <div className="max-w-sm mx-auto bg-white rounded-lg shadow-lg px-6 py-4">
+    <h1 className="text-lg font-bold text-gray-800 text-left">
+      Today <br></br> 
     </h1>
+<h2>{dayOfWeek}, {month} {dayOfMonth}</h2>
+    
   </div>
 </div>
 
