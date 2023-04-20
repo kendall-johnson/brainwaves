@@ -34,21 +34,24 @@ export default function App() {
   }, []);
 
   return (
+    <>
     <main className="App">
-    <div className="bg-gradient-to-br from-purple-400 to-blue-500 h-screen">
+  <div className="bg-gradient-to-br from-purple-400 to-blue-500 h-screen flex flex-row">
+    <Sidebar user={user} updateUser={updateUser} className="w-64" />
+    <div className="flex-1">
       {user ?
-        <>
-          <Sidebar user={user} updateUser={updateUser}/>
-          <Routes>
-            <Route path="/moods/" element={<MoodPage mood={mood} setMood={setMood}/>} />
-            <Route path="/moods/new" element={<MoodTrackingPage mood={mood} setMood={setMood}/>} />
-          </Routes>
-        </>
+        <Routes>
+          <Route path="/moods/" element={<MoodPage mood={mood} setMood={setMood}/>} />
+          <Route path="/moods/new" element={<MoodTrackingPage mood={mood} setMood={setMood}/>} />
+        </Routes>
         :
         <AuthPage setUser={updateUser} />
       }
     </div>
-    </main>
+  </div>
+</main>
+
+    </>
   )
 }
 

@@ -8,14 +8,13 @@ export default function Sidebar() {
       }
   return (
     <>
-    <nav className="w-16 h-full overflow-hidden text-gray-400 bg-gray-900 rounded">
-      <Link to="/" className="flex items-center justify-center mt-3" >
+    <aside className="w-16 h-full overflow-hidden text-gray-400 bg-gray-900">
+      <Link to="/" className="flex items-center justify-center mt-10" >
       <img src="https://i.imgur.com/OFSvrLJ.png" className="w-12 h-12 object-contain"></img>
       </Link>
-      <div className="flex flex-col items-center mt-3 border-t border-gray-700">
+      <div className="flex flex-col items-center mt-10 border-t border-gray-700">
       <Link to="/"
-          className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-          href="#"
+          className="flex items-center justify-center w-12 h-12 my-10 rounded hover:bg-gray-700 hover:text-gray-300"
         >
           <svg
             className="w-6 h-6 stroke-current"
@@ -33,8 +32,7 @@ export default function Sidebar() {
           </svg>
         </Link>
         <Link to="/moods"
-          className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
-          href="#"
+          className="flex items-center justify-center w-12 h-12 my-10 rounded hover:bg-gray-700 hover:text-gray-300"
         >
            <svg
         className="w-8 h-8"
@@ -50,7 +48,7 @@ export default function Sidebar() {
     </svg>
 </Link>
 <Link to="/moods/new"
-       className="flex items-center justify-center w-12 h-12 mt-2 text-gray-200 bg-gray-700 rounded"
+       className="flex items-center justify-center w-12 h-12 my-10 rounded hover:bg-gray-700 hover:text-gray-300"
        
      >
 <svg
@@ -68,7 +66,7 @@ export default function Sidebar() {
 </div>
 <div className="flex flex-col items-center mt-2 border-t border-gray-700">
 <Link to=""
-       className="flex items-center justify-center w-12 h-12 mt-2 rounded hover:bg-gray-700 hover:text-gray-300"
+       className="flex items-center justify-center w-12 h-12 mt-10 rounded hover:bg-gray-700 hover:text-gray-300"
        onClick={handleLogOut}
      >
 <svg
@@ -84,7 +82,7 @@ export default function Sidebar() {
     </svg>
 </Link>
 </div>
-</nav>
+</aside>
 </>
 
 );
