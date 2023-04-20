@@ -37,18 +37,24 @@ export default function App() {
     <>
     <main className="App">
   <div className="bg-gradient-to-br from-purple-400 to-blue-500 h-screen flex flex-row">
-    <Sidebar user={user} updateUser={updateUser} className="w-64" />
-    <div className="flex-1">
+    
+    
       {user ?
+      <>
+      <Sidebar user={user} updateUser={updateUser} className="w-64" />
+      <div className="flex-1">
         <Routes>
           <Route path="/moods/" element={<MoodPage mood={mood} setMood={setMood}/>} />
           <Route path="/moods/new" element={<MoodTrackingPage mood={mood} setMood={setMood}/>} />
         </Routes>
+        </div>
+        </>
         :
+        <div className="flex-1">
         <AuthPage setUser={updateUser} />
+        </div>
       }
     </div>
-  </div>
 </main>
 
     </>

@@ -214,7 +214,7 @@ export default function MoodTrackerForm({mood, setMood}) {
                 You are doing great! Select the reasons below that are causing the way you are currently feeling.
               </h2>
               <div className="grid w-full gap-6 md:grid-cols-3">
-              <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Family') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Family') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                     type="checkbox"
                     value="Family"
@@ -225,7 +225,7 @@ export default function MoodTrackerForm({mood, setMood}) {
                   />
                   Family
                 </label>
-                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Work') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Work') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                     type="checkbox"
                     value="Work"
@@ -236,7 +236,7 @@ export default function MoodTrackerForm({mood, setMood}) {
                   />
                   Work
                 </label>
-                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('School') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('School') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                    type="checkbox"
                    value="School"
@@ -247,7 +247,7 @@ export default function MoodTrackerForm({mood, setMood}) {
                   />
                   School
                 </label>
-                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Social Media') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Social Media') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                     type="checkbox"
                     value="Social Media"
@@ -258,7 +258,7 @@ export default function MoodTrackerForm({mood, setMood}) {
                   />
                   Social Media
                 </label>
-                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Breakup') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Breakup') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                     type="checkbox"
                     value="Breakup"
