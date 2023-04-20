@@ -4,7 +4,7 @@
 
 ### Your moods matter, track them with
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Sans&size=40&pause=1000&color=FFC1FE&center=true&vCenter=true&width=435&lines=Brainwaves" alt="Typing SVG" /></a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Sans&size=40&pause=1000&color=FFC1FE&center=true&vCenter=true&width=435&lines=Brainwaves" alt="Brainwaves" /></a>
 
 ### Built by: **[Kendall Johnson](https://www.linkedin.com/in/kendalljohnson-se/)**
 
@@ -39,7 +39,8 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 
 </div>
 
-## <i class="fa-regular fa-thumbtack fa-shake" style="color: #99beff;"></i> Where Brainwaves Began:
+<i class="fa-regular fa-thumbtack fa-shake" style="color: #99beff;"></i>
+##  Where Brainwaves Began:
 
 ### Landing Page
 
