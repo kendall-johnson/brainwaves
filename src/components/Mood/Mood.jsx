@@ -56,7 +56,7 @@ export default function Mood({ mood, setMood }) {
             <div className="flex flex-col items-center mb-4">
               <div className="w-full md:w-1/2 lg:w-1/3 rounded-lg overflow-hidden shadow-lg bg-gray-200">
                 <div className="bg-gradient-to-br from-green-400 to-blue-500 px-4 py-2">
-                  <h2 className="text-lg font-semibold mb-2 text-center text-white">
+                  <h2 className="text-4xl font-semibold mb-2 text-center text-white">
                     {mood.feeling}
                   </h2>
                 </div>

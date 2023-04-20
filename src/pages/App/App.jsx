@@ -35,8 +35,8 @@ export default function App() {
 
   return (
     <>
-    <main className="App">
-  <div className="bg-gradient-to-br from-purple-400 to-blue-500 h-screen flex flex-row">
+    <main className="App main-background">
+  <div className="h-screen flex flex-row">
     
     
       {user ?

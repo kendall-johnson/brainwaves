@@ -1,5 +1,6 @@
 import React from 'react'
 import MoodList from '../../components/MoodList/MoodList'
+import RandomQuote from '../../components/RandomQuote/RandomQuote';
 
 export default function MoodPage({mood, setMood}) {
   const date = new Date();
@@ -17,6 +18,7 @@ export default function MoodPage({mood, setMood}) {
     </div>
   </div>
       <MoodList mood={mood} setMood={setMood} />
+      <RandomQuote />
     </>
   )
 }
