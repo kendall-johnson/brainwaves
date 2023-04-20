@@ -152,7 +152,7 @@ export default function MoodTrackerForm({mood, setMood}) {
             <div className="rounded-lg shadow-lg p-8 bg-blue-200">
               <h2 className="text-3xl font-bold mb-4">Select the emotions that relate to your current mood:</h2>
               <div className="grid w-full gap-6 md:grid-cols-3">
-              <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Joy') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Joy') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Joy"
@@ -163,7 +163,7 @@ export default function MoodTrackerForm({mood, setMood}) {
               />
               Joy
               </label>
-              <label className={`inline-flex items-center justify-between w-full p-5 text-black  bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Anger') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <label className={`inline-flex items-center justify-between w-full p-5 text-black  bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Anger') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Anger"
@@ -174,7 +174,7 @@ export default function MoodTrackerForm({mood, setMood}) {
               />
               Anger
             </label>
-            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Fear') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Fear') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Fear"
@@ -185,7 +185,7 @@ export default function MoodTrackerForm({mood, setMood}) {
               />
               Fear
             </label>
-            <label className={`inline-flex items-center justify-between w-full p-5 text-black  bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Sadness') ? 'bg-blue-500 text-white' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Sadness') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Sadness"
