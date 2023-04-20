@@ -4,10 +4,11 @@ import MoodTrackingPage from '../MoodTrackingPage/MoodTrackingPage'
 import MoodPage from '../MoodPage/MoodPage'
 import AuthPage from '../AuthPage/AuthPage'
 import { Routes, Route } from 'react-router-dom';
-import NavBar from '../../components/NavBar/NavBar'
 import { getUser } from '../../utilities/users-service';
 import { index as fetchMoods } from '../../utilities/moods-api';
 import Sidebar from '../../components/NavBar/Sidebar'
+import RelaxPage from '../RelaxPage/RelaxPage'
+import HomePage from '../HomePage/HomePage'
 
 
 
@@ -44,8 +45,10 @@ export default function App() {
       <Sidebar user={user} updateUser={updateUser} className="w-64" />
       <div className="flex-1">
         <Routes>
+          <Route path='/home' element={<HomePage />} />
           <Route path="/moods/" element={<MoodPage mood={mood} setMood={setMood}/>} />
           <Route path="/moods/new" element={<MoodTrackingPage mood={mood} setMood={setMood}/>} />
+          <Route path="/relax" element={<RelaxPage />} />
         </Routes>
         </div>
         </>

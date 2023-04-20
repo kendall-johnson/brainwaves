@@ -1,6 +1,7 @@
 .main-background {
   background: linear-gradient(211deg, #ff9890, #90f1ff, #cb90ff, #ff90c7, #a1f2b8);
   background-size: 1000% 1000%;
+  min-height: 100vh;
 
   -webkit-animation: BrainwavesBackground 5s ease infinite;
   animation: BrainwavesBackground 5s ease infinite;

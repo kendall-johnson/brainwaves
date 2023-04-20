@@ -11,11 +11,11 @@ export default function Sidebar({user, updateUser}) {
   return (
     <>
     <aside className="w-16 h-full overflow-hidden text-gray-400 bg-gray-900">
-      <Link to="/" className="flex items-center justify-center mt-10" >
+      <Link to="/home" className="flex items-center justify-center mt-10" >
       <img src="https://i.imgur.com/OFSvrLJ.png" className="w-12 h-12 object-contain"></img>
       </Link>
       <div className="flex flex-col items-center mt-10 border-t border-gray-700">
-      <Link to="/"
+      <Link to="/home"
           className="flex items-center justify-center w-12 h-12 my-10 rounded hover:bg-gray-700 hover:text-gray-300"
         >
           <svg
@@ -64,6 +64,19 @@ export default function Sidebar({user, updateUser}) {
         d="M8 2a.5.5 0 01.5.5v5h5a.5.5 0 010 1h-5v5a.5.5 0 01-1 0v-5h-5a.5.5 0 010-1h5v-5A.5.5 0 018 2z"
       />
     </svg>
+</Link>
+<Link to="/relax"
+       className="flex items-center justify-center w-12 h-12 my-10 rounded hover:bg-gray-700 hover:text-gray-300"
+       
+     >
+<svg
+    className="w-8 h-8"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    stroke="none"
+  >
+    <path d="M14.36 14.23a3.76 3.76 0 01-4.72 0 1 1 0 00-1.28 1.54 5.68 5.68 0 007.28 0 1 1 0 10-1.28-1.54zm-5.15-3.69a1 1 0 001.41 0 1 1 0 000-1.41 3.08 3.08 0 00-4.24 0 1 1 0 101.41 1.41 1 1 0 011.42 0zm8.41-1.41a3.08 3.08 0 00-4.24 0 1 1 0 001.41 1.41 1 1 0 011.42 0 1 1 0 001.41 0 1 1 0 000-1.41zM12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8z" />
+  </svg>
 </Link>
 </div>
 <div className="flex flex-col items-center mt-2 border-t border-gray-700">
