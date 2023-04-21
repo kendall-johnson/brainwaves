@@ -73,7 +73,7 @@ A brief description here
 
 ### Add a Mood Page
 
-![AddAMood](https://i.imgur.com/7R12k9C.gifv)
+![AddAMood](https://i.imgur.com/7R12k9C.gif)
 
 A brief description here
 
