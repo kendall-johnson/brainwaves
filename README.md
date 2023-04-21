@@ -40,7 +40,7 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 </div>
 
 <div align="center">
-##  :alarm_clock: Where Brainwaves Began:
+<h1>:alarm_clock: Where Brainwaves Began:</h1>
 </div>
 ### Mood Page
 
