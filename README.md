@@ -116,20 +116,41 @@ A brief description here
 - ![React badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 <div align="center">
- <h2>The Code Behind The Program:</h2>
+ <h2>:pencil: The Code Behind The Program:</h2>
 </div>
 
 ```
-console.log("React App Code")
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const newMood = {
+      feeling,
+      emotions,
+      triggers,
+      reflection, 
+    };
+    try {
+      const response = await createMood(newMood);
+      setMood(newMood);
+      localStorage.setItem('mood', JSON.stringify(newMood));
+      navigate('/moods');
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
 ```
 
-### The preceeding code displays something...
+### The preceeding code displays one of the more important functions in the code. It is the C in C.R.U.D (THE CREATE), and has a few steps along the way to help make it work as expected. First we store all the new variables to one main variable to make the code more DRY (newMood). With that new variable we now call the function to send this newMood to the backend database... but wait just a moment, it needs a second to do the work... Okay we should be good now. After that is all finished we head on to setting the state of Mood to the newMood object and store it within our local storage. And to wrap everything up we head on back to the Moods page since we are finished adding a new mood!
 <div align="center">
  <h2>:chart_with_upwards_trend: Looking Forward (Roadmap) </h2>
 </div>
 Brainwaves, like every human, has a lot of growing to do! Here is a short list of some goals for the future: 
 
-- [ ] something
-- [ ] something
-- [ ] something
+- [x] Add a a space within the app that a user can access to decompress or calm nerves so that they can better control thier anxiety or mood swings.
+- [x] Provide tips and best practices for moments of heightened anxiety to allow the user to have more control over their stress.
+- [ ] Add a chatbot using OpenAI's API to interact with a user and help them navigate the page as well as other helpful actions.
+- [ ] Add the ability for the page to change themes dependant on the user's current mood.
+- [ ] Provide Monthly/Weekly challenges to keep the user motivated to work on their mental health.
+- [ ] Allow users to share progress and moods with others.
+- [ ] Provide data and analytics to users so that they can get a better understanding of their current mental status.
+- [ ] Give the user a emotional check-up everytime they load into the app.
