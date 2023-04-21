@@ -74,10 +74,11 @@ export default function MoodEditForm({ mood, onCancelEdit, onSaveEdit }) {
     value={feeling}
     onChange={handleFeelingChange}
   >
-    <option value="Happy">Happy</option>
-    <option value="Sad">Sad</option>
+    <option value="Fantastic">Fantastic</option>
+    <option value="Good">Good</option>
     <option value="Neutral">Neutral</option>
-    <option value="Mad">Mad</option>
+    <option value="Bad">Bad</option>
+    <option value="Awful">Awful</option>
   </select>
   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
     <svg
@@ -143,6 +144,95 @@ export default function MoodEditForm({ mood, onCancelEdit, onSaveEdit }) {
           />
           <span className="ml-2 text-gray-900 font-medium">Sadness</span>
         </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Nervous"
+            name="emotion"
+            checked={emotions.includes('Nervous')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Nervous</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Calm"
+            name="emotion"
+            checked={emotions.includes('Calm')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Calm</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Tired"
+            name="emotion"
+            checked={emotions.includes('Tired')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Tired</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Loved"
+            name="emotion"
+            checked={emotions.includes('Loved')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Loved</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Distant"
+            name="emotion"
+            checked={emotions.includes('Distant')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Distant</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Regretful"
+            name="emotion"
+            checked={emotions.includes('Regretful')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Regretful</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Embarrassed"
+            name="emotion"
+            checked={emotions.includes('Embarrassed')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Embarrassed</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Trusted"
+            name="emotion"
+            checked={emotions.includes('Trusted')}
+            onChange={handleEmotionChange}
+            className="form-checkbox h-5 w-5 text-blue-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Trusted</span>
+        </label>
+
       </div>
     </div>
     <div className="mb-6">
@@ -206,6 +296,50 @@ export default function MoodEditForm({ mood, onCancelEdit, onSaveEdit }) {
             className="form-checkbox h-5 w-5 text-yellow-500"
           />
           <span className="ml-2 text-gray-900 font-medium">Breakup</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Friends"
+            name="triggers"
+            checked={triggers.includes('Friends')}
+            onChange={handleTriggerChange}
+            className="form-checkbox h-5 w-5 text-yellow-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Friends</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Self Esteem"
+            name="triggers"
+            checked={triggers.includes('Self Esteem')}
+            onChange={handleTriggerChange}
+            className="form-checkbox h-5 w-5 text-yellow-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Self Esteem</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Bullying"
+            name="triggers"
+            checked={triggers.includes('Bullying')}
+            onChange={handleTriggerChange}
+            className="form-checkbox h-5 w-5 text-yellow-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Bullying</span>
+        </label>
+        <label className="flex items-center">
+          <input
+            type="checkbox"
+            value="Weather"
+            name="triggers"
+            checked={triggers.includes('Weather')}
+            onChange={handleTriggerChange}
+            className="form-checkbox h-5 w-5 text-yellow-500"
+          />
+          <span className="ml-2 text-gray-900 font-medium">Weather</span>
         </label>
       </div>
     </div>

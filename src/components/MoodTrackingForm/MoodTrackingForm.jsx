@@ -63,46 +63,46 @@ export default function MoodTrackerForm({mood, setMood}) {
     switch (step) {
       case 1:
         return (
-          <div className="rounded-lg shadow-lg p-8 bg-yellow-200">
+          <div className="rounded-lg shadow-lg p-8 bg-gray-200">
             <h2 className="text-3xl font-bold mb-4">What mood best fits your current mood?</h2>
             <div className="flex flex-col mb-4">
-            <label className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
+            <label className="inline-flex items-center justify-between w-full p-5 text-xl font-bold text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-blue-500 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
             <input
               type="radio"
               name="feeling"
-              value="Happy"
-              checked={feeling === 'Happy'}
+              value="Fantastic"
+              checked={feeling === 'Fantastic'}
               onChange={handleFeelingChange}
               className="hidden"
             />
             <div className="flex items-center">
               <span className="flex items-center justify-center w-4 h-4 mr-2 border border-gray-400 rounded-full bg-white dark:bg-gray-700">
-                {feeling === 'Happy' && (
+                {feeling === 'Fantastic' && (
                   <span className="w-2 h-2 rounded-full bg-blue-500" />
                 )}
               </span>
-              <span>Happy</span>
+              <span>Fantastic</span>
             </div>
             </label>
-            <label className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
+            <label className="inline-flex items-center justify-between w-full p-5 text-xl font-bold text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-blue-300 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
             <input
               type="radio"
               name="feeling"
-              value="Sad"
-              checked={feeling === 'Sad'}
+              value="Good"
+              checked={feeling === 'Good'}
               onChange={handleFeelingChange}
               className="hidden"
             />
             <div className="flex items-center">
               <span className="flex items-center justify-center w-4 h-4 mr-2 border border-gray-400 rounded-full bg-white dark:bg-gray-700">
-                {feeling === 'Sad' && (
+                {feeling === 'Good' && (
                   <span className="w-2 h-2 rounded-full bg-blue-500" />
                 )}
               </span>
-              <span>Sad</span>
+              <span>Good</span>
             </div>
             </label>
-            <label className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
+            <label className="inline-flex items-center justify-between w-full p-5 text-xl font-bold text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
             <input
               type="radio"
               name="feeling"
@@ -120,26 +120,44 @@ export default function MoodTrackerForm({mood, setMood}) {
               <span>Neutral</span>
             </div>
             </label>
-            <label className="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
+            <label className="inline-flex items-center justify-between w-full p-5 text-xl font-bold text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-red-300 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
             <input
               type="radio"
               name="feeling"
-              value="Mad"
-              checked={feeling === 'Mad'}
+              value="Bad"
+              checked={feeling === 'Bad'}
               onChange={handleFeelingChange}
               className="hidden"
             />
             <div className="flex items-center">
               <span className="flex items-center justify-center w-4 h-4 mr-2 border border-gray-400 rounded-full bg-white dark:bg-gray-700">
-                {feeling === 'Mad' && (
+                {feeling === 'Bad' && (
                   <span className="w-2 h-2 rounded-full bg-blue-500" />
                 )}
               </span>
-              <span>Mad</span>
+              <span>Bad</span>
+            </div>
+            </label>
+            <label className="inline-flex items-center justify-between w-full p-5 text-xl font-bold text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 hover:text-gray-600 hover:bg-gray-100 dark:text-red-500 dark:bg-gray-800 dark:hover:bg-gray-700 my-2">
+            <input
+              type="radio"
+              name="feeling"
+              value="Awful"
+              checked={feeling === 'Awful'}
+              onChange={handleFeelingChange}
+              className="hidden"
+            />
+            <div className="flex items-center">
+              <span className="flex items-center justify-center w-4 h-4 mr-2 border border-gray-400 rounded-full bg-white dark:bg-gray-700">
+                {feeling === 'Awful' && (
+                  <span className="w-2 h-2 rounded-full bg-blue-500" />
+                )}
+              </span>
+              <span>Awful</span>
             </div>
             </label>
             <button
-                className="px-4 py-2 bg-yellow-500 text-white rounded-md text-xl font-bold hover:bg-yellow-600"
+                className="px-4 py-2 mt-2 bg-yellow-500 text-black rounded-md text-xl font-bold hover:bg-yellow-600"
                 onClick={() => setStep(2)}
               >
                 Next
@@ -150,9 +168,9 @@ export default function MoodTrackerForm({mood, setMood}) {
         case 2:
           return (
             <div className="rounded-lg shadow-lg p-8 bg-blue-200">
-              <h2 className="text-3xl font-bold mb-4">Select the emotions that relate to your current mood:</h2>
+              <h2 className="text-3xl font-bold mb-4">Select the emotions that relate to your current mood: </h2>
               <div className="grid w-full gap-6 md:grid-cols-3">
-              <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Joy') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-blue-400 dark:border-blue-300 ${emotions.includes('Joy') ? 'bg-blue-500 text-black' : 'hover:text-blue-400 dark:text-blue-300 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Joy"
@@ -163,7 +181,7 @@ export default function MoodTrackerForm({mood, setMood}) {
               />
               Joy
               </label>
-              <label className={`inline-flex items-center justify-between w-full p-5 text-black  bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Anger') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <label className={`inline-flex items-center justify-between w-full p-5 text-black  bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-red-400 dark:border-red-400 ${emotions.includes('Anger') ? 'bg-blue-500 text-black' : 'hover:text-red-400 dark:text-red-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Anger"
@@ -174,7 +192,7 @@ export default function MoodTrackerForm({mood, setMood}) {
               />
               Anger
             </label>
-            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Fear') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-yellow-400 dark:border-yellow-400 ${emotions.includes('Fear') ? 'bg-blue-500 text-black' : 'hover:text-yellow-400 dark:text-yellow-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Fear"
@@ -185,7 +203,7 @@ export default function MoodTrackerForm({mood, setMood}) {
               />
               Fear
             </label>
-            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${emotions.includes('Sadness') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-red-400 dark:border-red-400 ${emotions.includes('Sadness') ? 'bg-blue-500 text-black' : 'hover:text-red-400 dark:text-red-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
                 type="checkbox"
                 value="Sadness"
@@ -195,6 +213,94 @@ export default function MoodTrackerForm({mood, setMood}) {
                 className="mr-2 hidden peer"
                 />
                 Sadness
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-yellow-400 dark:border-yellow-400 ${emotions.includes('Nervous') ? 'bg-blue-500 text-black' : 'hover:text-yellow-400 dark:text-yellow-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Nervous"
+                name="emotion"
+                checked={emotions.includes('Nervous')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Nervous
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-blue-400 dark:border-blue-300 ${emotions.includes('Calm') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-blue-300 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Calm"
+                name="emotion"
+                checked={emotions.includes('Calm')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Calm
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-yellow-400 dark:border-yellow-400 ${emotions.includes('Tired') ? 'bg-blue-500 text-black' : 'hover:text-yellow-400 dark:text-yellow-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Tired"
+                name="emotion"
+                checked={emotions.includes('Tired')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Tired
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-green-400 dark:border-green-400 ${emotions.includes('Loved') ? 'bg-blue-500 text-black' : 'hover:text-green-400 dark:text-green-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Loved"
+                name="emotion"
+                checked={emotions.includes('Loved')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Loved
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-red-400 dark:border-red-400 ${emotions.includes('Distant') ? 'bg-blue-500 text-black' : 'hover:text-red-400 dark:text-red-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Distant"
+                name="emotion"
+                checked={emotions.includes('Distant')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Distant
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-red-400 dark:border-red-400 ${emotions.includes('Regretful') ? 'bg-blue-500 text-black' : 'hover:text-red-400 dark:text-red-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Regretful"
+                name="emotion"
+                checked={emotions.includes('Regretful')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Regretful
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-yellow-400 dark:border-yellow-400 ${emotions.includes('Embarrassed') ? 'bg-blue-500 text-black' : 'hover:text-yellow-400 dark:text-yellow-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Embarrassed"
+                name="emotion"
+                checked={emotions.includes('Embarrassed')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Embarrassed
+            </label>
+            <label className={`inline-flex items-center justify-between w-full p-5 text-black bg-white border-2 border-gray-200 rounded-full cursor-pointer dark:hover:text-green-400 dark:border-green-400 ${emotions.includes('Trusted') ? 'bg-blue-500 text-black' : 'hover:text-green-400 dark:text-green-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                type="checkbox"
+                value="Trusted"
+                name="emotion"
+                checked={emotions.includes('Trusted')}
+                onChange={handleEmotionChange}
+                className="mr-2 hidden peer"
+                />
+                Trusted
             </label>
             </div>
             <div className='flex justify-center items-center'>
@@ -210,9 +316,10 @@ export default function MoodTrackerForm({mood, setMood}) {
         case 3:
           return (
             <div className="rounded-lg shadow-lg p-8 bg-pink-200">
-              <h2 className="text-3xl font-bold mb-4">
-                You are doing great! Select the reasons below that are causing the way you are currently feeling.
+              <h2 className="text-3xl font-bold mb-4 text-center">
+                You're feelings are valid! What is currently making you feel this way?
               </h2>
+              <p className="text-center text-gray-700 text-md mb-8">Take a second to think about anything that is acting as a trigger and select the option below. Deep breaths we know this can be difficult, you are not alone.</p>
               <div className="grid w-full gap-6 md:grid-cols-3">
               <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Family') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
               <input
@@ -269,6 +376,50 @@ export default function MoodTrackerForm({mood, setMood}) {
                   />
                   Breakup
                 </label>
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Friends') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                    type="checkbox"
+                    value="Friends"
+                    name="triggers"
+                    checked={triggers.includes('Friends')}
+                    onChange={handleTriggerChange}
+                    className="mr-2 hidden peer"
+                  />
+                  Friends
+                </label>
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Self Esteem') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                    type="checkbox"
+                    value="Self Esteem"
+                    name="triggers"
+                    checked={triggers.includes('Self Esteem')}
+                    onChange={handleTriggerChange}
+                    className="mr-2 hidden peer"
+                  />
+                  Self Esteem
+                </label>
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Bullying') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                    type="checkbox"
+                    value="Bullying"
+                    name="triggers"
+                    checked={triggers.includes('Bullying')}
+                    onChange={handleTriggerChange}
+                    className="mr-2 hidden peer"
+                  />
+                  Bullying
+                </label>
+                <label className={`inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 ${triggers.includes('Weather') ? 'bg-blue-500 text-black' : 'hover:text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700'}`}> 
+              <input
+                    type="checkbox"
+                    value="Weather"
+                    name="triggers"
+                    checked={triggers.includes('Weather')}
+                    onChange={handleTriggerChange}
+                    className="mr-2 hidden peer"
+                  />
+                  Weather
+                </label>
                 </div>
                 <div className='flex justify-center items-center'>
                 <button 
@@ -283,13 +434,14 @@ export default function MoodTrackerForm({mood, setMood}) {
         case 4:
   return (
     <div className="rounded-lg shadow-lg p-8 bg-green-200">
-      <h2 className="text-3xl font-bold mb-4">Write your reflections based on the previous questions:</h2>
+      <h2 className="text-3xl font-bold mb-4">Take a moment to reflection on the previous questions:</h2>
+      <p className="text-center text-gray-700 text-lg mb-8">Write some notes down you would like to save for later in the space provided below.</p>
       <div className='flex justify-center'>
       <textarea
         value={reflection}
         onChange={handleReflectionChange}
-        placeholder='Write some notes about your feelings here'
-        className="border-2 border-gray-500 rounded-lg p-2 mb-4 text-lg text-gray-700 font-medium "
+        placeholder='Imperfection is perfection...'
+        className="border-2 min-w-fit border-gray-500 rounded-lg p-2 mb-4 text-lg text-gray-700 font-medium "
         style={{resize: "none", minHeight: "200px"}}
       />
       </div>

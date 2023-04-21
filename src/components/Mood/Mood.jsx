@@ -3,6 +3,7 @@ import { editMood, deleteMood } from "../../utilities/moods-api";
 import { index as fetchMoods } from '../../utilities/moods-api';
 
 import MoodEditForm from "../MoodEditForm/MoodEditForm.";
+import RandomQuote from "../RandomQuote/RandomQuote";
 
 export default function Mood({ mood, setMood }) {
   const [editing, setEditing] = useState(false);
@@ -121,6 +122,7 @@ export default function Mood({ mood, setMood }) {
               </h2>
             </div>
           )}
+          <RandomQuote />
         </>
       )}
     </>

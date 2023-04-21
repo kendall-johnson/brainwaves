@@ -18,7 +18,6 @@ export default function MoodPage({mood, setMood}) {
     </div>
   </div>
       <MoodList mood={mood} setMood={setMood} />
-      <RandomQuote />
     </>
   )
 }

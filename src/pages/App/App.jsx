@@ -12,6 +12,7 @@ import HomePage from '../HomePage/HomePage'
 
 
 
+
 export default function App() {
 
   const [user, setUser] = useState(getUser())
@@ -51,6 +52,7 @@ export default function App() {
           <Route path="/relax" element={<RelaxPage />} />
         </Routes>
         </div>
+        
         </>
         :
         <div className="flex-1">
