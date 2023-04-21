@@ -61,41 +61,41 @@ More of the bare minimum design in the initial stages of the application.
 
 ### Landing Page
 
-![loginPage]()
+![loginPage](https://i.imgur.com/JlA0Oyx.gif)
 
-Welcome to Brainwaves! Log in in order to access...
+Welcome to Brainwaves! Log in in order to gain access to the all-in-one mood tracking application!
 
-### Main Page
+### Home Page
 
-![indexpage]()
+![HomePage](https://i.imgur.com/15kurIf.gif)
 
-A brief description here
+Here is where you are greeted to the varying categories of features currently offered by Brainwaves, with navigations to each location.
+
+### View Mood Page
+
+![ViewMoodPage](https://i.imgur.com/ERy8w7g.gif)
+
+View the moods you make here, along with the local date, and a randomly generated inspirational quote! You can also edit and delete you moods here, if you so choose.
+
 
 ### Add a Mood Page
 
 ![AddAMood](https://i.imgur.com/7R12k9C.gif)
 
-A brief description here
+This page is where you will be introduced to a short questionnaire to help breakdown your current mental status.
 
-### Something Page
 
-![framework]()
+### Relaxation Page
 
-A brief description here
+![RelaxPage](https://i.imgur.com/vITANXb.gif)
 
-### Something Page
+Need a second to focus and catch your breath? We understand, so we built that into our application. Sit back and listen to the calming music mixed with our random tips to help you regain control of your stress.
 
-![database]()
+### Loading Screen
 
-A brief description here
+![LoadingScreen](https://i.imgur.com/FjWzP69.gif)
 
-### Something
-
-![Add]()
-
-A brief description here
-
-### Something
+This is introduced when loading into the Relaxation Page, to give time for certain components to render.
 
 ![details]()
 
