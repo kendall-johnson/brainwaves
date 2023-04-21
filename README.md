@@ -39,12 +39,12 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 
 </div>
 
-<img src="https://i.imgur.com/Eamb8WY.png" />
-##  Where Brainwaves Began:
+
+##  :alarm_clock: Where Brainwaves Began:
 
 ### Landing Page
 
-![loginPage]()
+![Add Mood Page](https://i.imgur.com/eOFmdSY.png)
 
 Welcome to Brainwaves! Log in in order to access...
 
