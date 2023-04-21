@@ -25,7 +25,7 @@
   
 **_Click the following link to be redirected to the live version of the code!_**
 
-## [Brainwaves](https://syntaxify1.herokuapp.com/)
+## [Brainwaves](https://brainwaves.herokuapp.com/)
 
 ### Description:
 
@@ -71,9 +71,9 @@ Welcome to Brainwaves! Log in in order to access...
 
 A brief description here
 
-### Something Page
+### Add a Mood Page
 
-![language]()
+![AddAMood](https://i.imgur.com/7R12k9C.gifv)
 
 A brief description here
 
