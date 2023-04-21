@@ -97,9 +97,7 @@ Need a second to focus and catch your breath? We understand, so we built that in
 
 This is introduced when loading into the Relaxation Page, to give time for certain components to render.
 
-![details]()
 
-A brief description here
 <div align="center">
  <h2> :computer: Technologies Used </h2>
 </div>
