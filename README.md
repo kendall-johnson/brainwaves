@@ -42,20 +42,22 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 
 ##  :alarm_clock: Where Brainwaves Began:
 
-### Landing Page
+### Mood Page
 
-![Add Mood Page](https://i.imgur.com/eOFmdSY.png)
+![MoodPage](https://i.imgur.com/eOFmdSY.png)
 
-Welcome to Brainwaves! Log in in order to access...
+Welcome to the humble beginnings of Brainwaves! When building out the functionality of an application, you just need the design to display the necessities, not look pretty.
 
-### Main Page
+### Add a Mood Page
 
-![indexpage]()
+![AddAMoodPage](https://i.imgur.com/s6tkw27.png)
 
-A brief description here
+More of the bare minimum design in the initial stages of the application.
 
 
 ## :camera_flash: Visuals and Helpful Insight:
+
+
 
 ### Landing Page
 
