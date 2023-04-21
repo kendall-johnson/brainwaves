@@ -140,7 +140,7 @@ A brief description here
 
 ```
 
-### The preceeding code displays one of the more important functions in the code. It is the C in C.R.U.D (THE CREATE), and has a few steps along the way to help make it work as expected. First we store all the new variables to one main variable to make the code more DRY (newMood). With that new variable we now call the function to send this newMood to the backend database... but wait just a moment, it needs a second to do the work... Okay we should be good now. After that is all finished we head on to setting the state of Mood to the newMood object and store it within our local storage. And to wrap everything up we head on back to the Moods page since we are finished adding a new mood!
+#### The preceeding code displays one of the more important functions in the code. It is the C in C.R.U.D (THE CREATE), and has a few steps along the way to help make it work as expected. First we store all the new variables to one main variable to make the code more DRY (newMood). With that new variable we now call the function to send this newMood to the backend database... but wait just a moment, it needs a second to do the work... Okay we should be good now. After that is all finished we head on to setting the state of Mood to the newMood object and store it within our local storage. And to wrap everything up we head on back to the Moods page since we are finished adding a new mood!
 <div align="center">
  <h2>:chart_with_upwards_trend: Looking Forward (Roadmap) </h2>
 </div>
