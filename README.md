@@ -42,13 +42,13 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 <div align="center">
   <h2>:alarm_clock: Where Brainwaves Began:</h2>
 </div>
-### Mood Page
+<h2>Mood Page</h2>
 
 ![MoodPage](https://i.imgur.com/eOFmdSY.png)
 
 Welcome to the humble beginnings of Brainwaves! When building out the functionality of an application, you just need the design to display the necessities, not look pretty.
 
-### Add a Mood Page
+<h2>Add a Mood Page</h2>
 
 ![AddAMoodPage](https://i.imgur.com/s6tkw27.png)
 
