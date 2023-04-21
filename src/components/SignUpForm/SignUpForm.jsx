@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { signUp } from '../../utilities/users-service';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignUpForm({  setUser,  showLogin, setShowLogin }) {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,6 +18,7 @@ export default function SignUpForm({  setUser,  showLogin, setShowLogin }) {
       const { error, confirm, ...data } = formData;
       const user = await signUp(data);
       setUser(user);
+      navigate('/home');
     } catch {
       setFormData({ ...formData, error: 'Sign Up Failed - Try Again' });
     }
@@ -109,17 +112,12 @@ export default function SignUpForm({  setUser,  showLogin, setShowLogin }) {
         </button>
       </div>
     </form>
-    
-
     <p className="mt-8 text-xs font-light text-center text-gray-700">
         {" "}
         Already have an account?{" "}
         <a
-            href="#"
             className="font-medium text-purple-600 hover:underline"
             onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}
-        
-           
         </a>
     </p>
 </div>

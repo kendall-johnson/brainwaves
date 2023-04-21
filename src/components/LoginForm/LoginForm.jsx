@@ -20,7 +20,7 @@ evt.preventDefault();
 try {
 const user = await login(credentials);
 setUser(user);
-navigate('/moods'); // Navigate to "/moods" after successful login
+navigate('/home');
 } catch {
 setError('Log In Failed - Try Again');
 }
@@ -77,7 +77,6 @@ setError('Log In Failed - Try Again');
             {" "}
             Don't have an account?{" "}
             <a
-                href="#"
                 className="font-medium text-purple-600 hover:underline"
                 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}
             
