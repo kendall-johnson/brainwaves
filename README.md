@@ -40,7 +40,7 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 </div>
 
 <div align="center">
-<h1>:alarm_clock: Where Brainwaves Began:</h1>
+  <h2>:alarm_clock: Where Brainwaves Began:</h2>
 </div>
 ### Mood Page
 
@@ -55,7 +55,7 @@ Welcome to the humble beginnings of Brainwaves! When building out the functional
 More of the bare minimum design in the initial stages of the application.
 
 <div align="center">
-## :camera_flash: Visuals and Helpful Insight:
+ <h2>:camera_flash: Visuals and Helpful Insight: </h2>
 </div>
 
 
@@ -101,7 +101,7 @@ A brief description here
 
 A brief description here
 <div align="center">
-## :computer: Technologies Used
+ <h2> :computer: Technologies Used </h2>
 
 - ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 - ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
@@ -114,7 +114,7 @@ A brief description here
 - ![Express.js badge](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 - ![React badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-## The Code Behind The Program:
+ <h2>The Code Behind The Program:</h2>
 </div>
 ```
 console.log("React App Code")
@@ -122,9 +122,9 @@ console.log("React App Code")
 ```
 
 ### The preceeding code displays something...
-
-## :chart_with_upwards_trend: Looking Forward
-
+<div align="center">
+ <h2>:chart_with_upwards_trend: Looking Forward (Roadmap) </h2>
+</div>
 Brainwaves, like every human, has a lot of growing to do! Here is a short list of some goals for the future: 
 
 - [ ] something
