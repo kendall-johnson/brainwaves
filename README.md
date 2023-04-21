@@ -39,9 +39,9 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 
 </div>
 
-
+<div align="center">
 ##  :alarm_clock: Where Brainwaves Began:
-
+</div>
 ### Mood Page
 
 ![MoodPage](https://i.imgur.com/eOFmdSY.png)
@@ -54,9 +54,9 @@ Welcome to the humble beginnings of Brainwaves! When building out the functional
 
 More of the bare minimum design in the initial stages of the application.
 
-
+<div align="center">
 ## :camera_flash: Visuals and Helpful Insight:
-
+</div>
 
 
 ### Landing Page
@@ -100,7 +100,7 @@ A brief description here
 ![details]()
 
 A brief description here
-
+<div align="center">
 ## :computer: Technologies Used
 
 - ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
@@ -115,7 +115,7 @@ A brief description here
 - ![React badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 ## The Code Behind The Program:
-
+</div>
 ```
 console.log("React App Code")
 
