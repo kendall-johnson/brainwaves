@@ -39,7 +39,7 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 
 </div>
 
-<i class="fa-regular fa-thumbtack fa-shake" style="color: #99beff;"></i>
+<img src="https://i.imgur.com/Eamb8WY.png" />
 ##  Where Brainwaves Began:
 
 ### Landing Page
