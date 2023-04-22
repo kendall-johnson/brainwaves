@@ -29,7 +29,7 @@
 
 ### Description:
 
-**_Brainwaves_** is a Full-Stack React Web Application that utilizes Node.js, Express.js, React, MongoDB, Mongoose, Tailwind Css, and JavaScript to help users track their moods over time. Whether you're feeling happy, sad, or somewhere in between, Brainwaves allows you to record and monitor your emotions in a convenient and user-friendly way. The app utilizes a simple interface that allows you to log your mood with just a few taps, and it provides detailed graphs and analytics to help you gain insights into your emotional patterns. With Brainwaves, you can set reminders to check in with yourself throughout the day, track your progress over time, and even identify triggers that affect your mood. By using Brainwaves, you can take control of your emotional well-being and improve your overall quality of life.
+**_Brainwaves_** is a Full-Stack React Web Application that utilizes Node.js, Express.js, React, MongoDB, Mongoose, Tailwind Css, and JavaScript to help users track their moods over time. Whether you're feeling happy, sad, or somewhere in between, Brainwaves allows you to record and monitor your emotions in a convenient and user-friendly way. The app utilizes a simple interface that allows you to log your mood with just a few taps. With Brainwaves, you are able to track common triggers and emotions related to your moods. By using Brainwaves, you can take control of your emotional well-being and improve your overall quality of life with just a few taps!
 
 ## :link: Associated Links:
 
@@ -42,13 +42,13 @@ Click the following link to be redirected to the Wireframe, ERD, and Design Insp
 <div align="center">
   <h2>:alarm_clock: Where Brainwaves Began:</h2>
 </div>
-### Mood Page
+<h2>Mood Page</h2>
 
 ![MoodPage](https://i.imgur.com/eOFmdSY.png)
 
 Welcome to the humble beginnings of Brainwaves! When building out the functionality of an application, you just need the design to display the necessities, not look pretty.
 
-### Add a Mood Page
+<h2>Add a Mood Page</h2>
 
 ![AddAMoodPage](https://i.imgur.com/s6tkw27.png)
 
