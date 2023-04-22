@@ -44,11 +44,11 @@ export default function HomePage() {
                 </div>
                 <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Never a better time to sit back and relax.</h2>
                 <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">Take the shoes off, kick back, and chill. The boss won't mind you taking some time off - who is gonna tell them anyways?</p>
-                <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Path to relaxation
+                <Link to="/relax" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Path to relaxation
                     <svg aria-hidden="true" className="w-4 h-4 ml-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                     </svg>
-                </a>
+                </Link>
             </div>
         </div>
     </div>
